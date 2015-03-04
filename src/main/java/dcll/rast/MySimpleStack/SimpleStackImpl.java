@@ -22,7 +22,7 @@ Stack<Object> wrapperStack = new Stack<Object>();
 
     @Override
     public void push(Item item) {
-        wrapperStack.push();
+        wrapperStack.push(item);
     }
 
     @Override

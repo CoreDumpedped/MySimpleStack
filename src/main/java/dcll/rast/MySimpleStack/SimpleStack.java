@@ -13,7 +13,7 @@ public interface SimpleStack {
 
     public void push(Item item);
 
-    public Item peek() throw EmptyStackException;
+    public Item peek() throws EmptyStackException;
 
-    public Item pop() throw EmptyStackException;
+    public Item pop() throws EmptyStackException;
 }
