@@ -18,7 +18,7 @@ public class SimpleStackImplTest {
 
     @Test
     public void testIsEmpty() throws Exception {
-        Assert.assertEquals(true,simpleStack.isEmpty());
+        Assert.assertEquals(true, simpleStack.isEmpty());
         String element1= "toto";
         simpleStack.push(new Item(new String(element1)));
     }
@@ -39,7 +39,18 @@ public class SimpleStackImplTest {
 
     @Test
     public void testPeek() throws Exception {
+        Item ita=new Item(new Integer(8));
+        Assert.assertEquals(0,simpleStack.getSize());
+        simpleStack.push(ita);
+        Assert.assertEquals(1,simpleStack.getSize());
+        Item o=simpleStack.peek();
 
+        Assert.assertEquals(1,simpleStack.getSize());
+
+        Assert.assertTrue(o.getValues() instanceof Integer);
+        Integer integer= (Integer)o.getValues();
+        Assert.assertEquals(8,integer.intValue());
+        Assert.assertEquals(ita.getValues(),integer);
     }
 
     @Test
