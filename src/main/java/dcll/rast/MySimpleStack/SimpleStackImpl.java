@@ -8,6 +8,7 @@ import java.util.Stack;
  */
 
 //une modification d'exigence 2
+    //modif 2 bis
 //Un commentaire qui repond aux exigences #3
 public class SimpleStackImpl implements SimpleStack {
 Stack<Object> wrapperStack = new Stack<Object>();
